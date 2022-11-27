@@ -1,0 +1,125 @@
+* {
+    color: white;
+}
+
+.video {
+    float: left;
+}
+
+.dest-text {
+    text-align: center;
+    margin-bottom: 2%;
+}
+
+.lancamentos {
+    color: black;
+    display: flex;
+    flex-direction: row;
+}
+
+.dropdown {
+    margin-top: -46px;
+}
+
+.card-title {
+    color: black;
+}
+
+.card-text {
+    color: black;
+}
+
+.card-body {
+    display: inline-block;
+}
+
+.title-dest {
+    padding-left: 52%;
+}
+
+.title-carousel {
+    text-align: center;
+    padding-bottom: 20px;
+}
+
+.subtitle-carousel {
+    display: flex;
+    flex-direction: column;
+}
+
+.carousel-item.active {
+    display: flex;
+    padding: 10px;
+}
+
+.text-item-carousel {
+    width: 65%;
+}
+
+.card iframe {
+    padding: 5px;
+}
+
+.dropdown {
+    text-align: right;
+}
+
+.card {
+    display: inline-flex;
+}
+
+.sub3 {
+    text-align: center;
+    margin-top: -40px;
+}
+
+.plat-maintext {
+    color: black;
+}
+
+.more-information {
+    justify-content: right;
+}
+
+.subtitle {
+    width: 50%;
+    display: inline-block;
+}
+
+.lancamentos {
+    display: flex;
+
+}
+
+.footer {
+    display: flex;
+    padding: 10px;
+}
+
+.title-games {
+    text-align: center;
+    color: black;
+}
+
+.pub {
+    padding: 20px;
+    text-align: center;
+}
+
+#more-plataforms {
+    margin-bottom: 20px;
+}
+
+#footer-container p {
+    text-align: center;
+    padding: 40px;
+}
+
+#footer-container {
+    height: 120px;
+}
+
+#bt-more-dest {
+    margin-top: 10px;
+    margin-left: 80%;
+}
