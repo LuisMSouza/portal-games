@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="./styles/style.css">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="./js/index.js"></script>
+  <link rel="icon" type="image/x-icon" href="./img/logo.png">
+  <title>Games Portal</title>
+</head>
+
+<body>
+  <nav class="navbar navbar-expand-sm navbar-dark bg-dark">
+    <div class="container-fluid" id="nav-main">
+      <a class="navbar-brand" href="javascript:void(0)">
+        <img src="img/logo.png" alt="Avatar Logo" style="width:40px;" class="rounded-pill">
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mynavbar">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="mynavbar">
+        <ul class="navbar-nav me-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="#title-carousel">Destaques</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#lancamentos">Lançamentos</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#plataform">Plataformas</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#publ">Publishers</a>
+          </li>
+        </ul>
+        <form class="d-flex">
+          <input class="form-control me-2" type="text" placeholder="Digite aqui" id="searchBox">
+          <button class="btn btn-secondary" type="button" onclick="Search()">Pesquisar</button>
+        </form>
+      </div>
+    </div>
+  </nav>
+  <div class="container-xxl bg-dark" id="container-destaque">
+    <h1>Destaque</h1>
+    <div id="destaques" class="dest">
+
+    </div>
+  </div>
+  <div class="container">
+    <div id="lancamentos" class="row">
+      <h1 id="drop1" class="lancamentos">Lançamentos</h1>
+      <div class="col-6">
+        <div class="dropdown" style="text-align: right;margin-right: -185px;">
+          <a class="btn btn-secondary dropdown-toggle" href="#" role="button" id="dropdownMenuLink"
+            data-bs-toggle="dropdown" aria-expanded="false">
+            Categoria: TODOS
+          </a>
+          <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+            <li><a class="dropdown-item" href="#">cat 1</a></li>
+            <li><a class="dropdown-item" href="#">cat 2</a></li>
+            <li><a class="dropdown-item" href="#">cat 3</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="col-6">
+        <div class="dropdown" style="text-align: right;">
+          <a class="btn btn-secondary dropdown-toggle" href="#" role="button" id="dropdownMenuLink"
+            data-bs-toggle="dropdown" aria-expanded="false">
+            Gênero: TODOS
+          </a>
+          <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+            <li><a class="dropdown-item" href="#">gen 1</a></li>
+            <li><a class="dropdown-item" href="#">gen 2</a></li>
+            <li><a class="dropdown-item" href="#">gen 3</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="cards-destaque">
+
+      </div>
+    </div>
+  </div>
+  <div class="container" style="text-align: right; margin-top: 5px;">
+    <div class="row">
+      <div class="col-12">
+        <button type="button" class="btn btn-secondary btn-sm" id="buttonMoreLanc" onclick="loadMoreGames()">+ Carregar
+          mais lançamentos</button>
+      </div>
+    </div>
+  </div>
+  <div id="plataform" class="container">
+    <h1 style="color: black;">Plataformas</h1>
+    <div class="platfm">
+
+    </div>
+  </div>
+  <div class="container" style="text-align: right; margin-top: 5px;">
+    <div class="row">
+      <div id="more-plataforms" class="col-12">
+        <button type="button" class="btn btn-secondary btn-sm" id="buttonMorePlat" onclick="loadMorePlatforms()">+
+          Carregar mais plataformas</button>
+      </div>
+    </div>
+  </div>
+  <div class="container-xxl bg-dark" id="container-publishers">
+    <div id="publ" class="pub">
+      <h1>Publishers</h1>
+      <div class="pubdiv" id="pubdivisor">
+
+      </div>
+    </div>
+    <div class="container" style="text-align: right; margin-top: 5px;">
+      <div class="row">
+        <div class="col-12">
+          <button type="button" class="btn btn-secondary btn-sm" style="margin-bottom: 10px;" id="buttonMorePubl"
+            onclick="loadMorePublishers()">+ Carregar mais
+            publishers</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="footer">
+    <div class="container">
+      <div class="subtitle">
+        <h1 style="color: black;">Sobre</h1>
+        <p style="color: black;">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ullam animi ea soluta
+          aliquid quo suscipit
+          delectus distinctio deserunt fuga consequatur vel unde quia aperiam quis, omnis maxime ipsum, ad et.
+        </p>
+      </div>
+    </div>
+    <div class="container">
+      <h1 style="color: black;">Editorial</h1>
+      <p style="color: black;"><img src="img/user.png" alt="user" width="20px" style="margin-right: 5px;"><b
+          style="color: black;">Redação: </b>Luís Miguel</p>
+      <p style="color: black;"><img src="img/user.png" alt="user" width="20px" style="margin-right: 5px;"><b
+          style="color: black;">Pesquisa: </b>Luís Miguel</p>
+      <p style="color: black;"><img src="img/user.png" alt="user" width="20px" style="margin-right: 5px;"><b
+          style="color: black;">Gerente Geral: </b>Luís Miguel</p>
+      <p style="color: black;"><b style="color: black;">Matrícula: </b>788315</p>
+      <h5 style="color: black;">Redes Sociais</h5>
+      <img src="img/facebook.png" alt="facebook" width="50px">
+      <img src="img/twitter.png" alt="twitter" width="50px">
+      <img src="img/instagram.png" alt="instagram" width="50px">
+    </div>
+  </div>
+  <div id="footer-container" class="container-fluid bg-dark">
+    <p>Copyright 2022 - Disciplina de desenvolvimento de interfaces Web -<b> ICEI PUC Minas</b></p>
+  </div>
+</body>
+
+</html>
